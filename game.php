@@ -32,8 +32,14 @@
                 <span>Cooking Level: <?php echo $cook; ?></span>
                 <span>Attack Level: <?php echo $atk; ?></span>
             </li>
-            <p>Total Level: <?php echo $total; ?></p>
+            <h2>Total Level: <?php echo $total; ?></h2>
         </div>
+        <div id="game_screen">
+        </div>
+        <div id="game_update">
+            <?php echo $game_update; ?>
+        </div>
+        <p><a href="inventory.php" target="_blank">Inventory</a></p>
         <div id="skill_buttons">
             <form action="game.php" method="post">
                 <input type="submit" value="Mine">
