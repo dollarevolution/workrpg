@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="game.css">
         <?php
         if (isset($_POST['submit'])) {
             if ($_POST['submit'] == 'Mine') {
@@ -23,15 +23,15 @@
     </head>
     <body>
         <div id="skills">
-            <li>
-                <span>Mining Level: <?php echo $mine; ?></span>
-                <span>Fishing Level: <?php echo $fish; ?></span>
-                <span>Farming Level: <?php echo $farm; ?></span>
-                <span>Construction Level: <?php echo $constr; ?></span>
-                <span>Woodcutting Level: <?php echo $wood; ?></span>
-                <span>Cooking Level: <?php echo $cook; ?></span>
-                <span>Attack Level: <?php echo $atk; ?></span>
-            </li>
+            <ul>
+                <li>Mining Level: <?php echo $mine; ?></li>
+                <li>Fishing Level: <?php echo $fish; ?></li>
+                <li>Farming Level: <?php echo $farm; ?></li>
+                <li>Construction Level: <?php echo $constr; ?></li>
+                <li>Woodcutting Level: <?php echo $wood; ?></li>
+                <li>Cooking Level: <?php echo $cook; ?></li>
+                <li>Attack Level: <?php echo $atk; ?></li>
+            </ul>
             <h2>Total Level: <?php echo $total; ?></h2>
         </div>
         <div id="game_screen">
@@ -39,7 +39,7 @@
         <div id="game_update">
             <?php echo $game_update; ?>
         </div>
-        <p><a href="inventory.php" target="_blank">Inventory</a></p>
+        <p><a href="inventory.php" target="_blank">Inventory</a> | <a href="shop.php" target="_blank">Shop</a></p>
         <div id="skill_buttons">
             <form action="game.php" method="post">
                 <input type="submit" value="Mine">
