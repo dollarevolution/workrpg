@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="shop.css">
         <?php
             //randomize prices once an hour
             $stone_price = 0;
@@ -18,6 +19,18 @@
         ?>
     </head>
     <body>
-
+        <h2>Shop</h2>
+        <ul>
+            <li>
+                Stone: <?php echo $stone_price; ?><br/>
+                Buy: <form action="store.php" method="post">Amount: <input type="text" name="stone_buy_amount"> <input type="submit" value="Buy Stone"></form>
+                Sell: <form action="store.php" method="post">Amount: <input type="text" name="stone_sell_amount"> <input type="submit" value="Sell Stone"></form>
+            </li>
+        </ul>
+        <?php
+        if(isset($_POST['submit'])) {
+            //someone bought or sold shit. Figure out what and how much then tell the nigga
+            echo "Yall niggas bought or sold some shit";
+        }
     </body>
 </html>

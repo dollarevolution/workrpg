@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="inventory.css">
         <?php
             $money = 0;
             $stone = 0;
@@ -12,6 +13,7 @@
         ?>
     </head>
     <body>
+        <h2>Inventory</h2>
         <ul>
             <li>Money: $<?php echo $money; ?></li>
             <li>Stone: <?php echo $stone; ?></li>
