@@ -9,7 +9,6 @@
             $fish = 0;
             $gems = 0;
             $towns = 0;
-
         ?>
     </head>
     <body>

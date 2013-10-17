@@ -39,7 +39,7 @@
         <div id="game_update">
             <?php echo $game_update; ?>
         </div>
-        <p><a href="inventory.php" target="_blank">Inventory</a> | <a href="shop.php" target="_blank">Shop</a></p>
+        <p><a href="inventory.php" target="_blank">Inventory</a> | <a href="shop.php" target="_blank">Shop</a> | <a href="chat.php" target="_blank">Chat</a></p>
         <div id="skill_buttons">
             <form action="game.php" method="post">
                 <input type="submit" value="Mine">
