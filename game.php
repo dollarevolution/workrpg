@@ -27,7 +27,12 @@
                 <span>Mining Level: <?php echo $mine; ?></span>
                 <span>Fishing Level: <?php echo $fish; ?></span>
                 <span>Farming Level: <?php echo $farm; ?></span>
+                <span>Construction Level: <?php echo $constr; ?></span>
+                <span>Woodcutting Level: <?php echo $wood; ?></span>
+                <span>Cooking Level: <?php echo $cook; ?></span>
+                <span>Attack Level: <?php echo $atk; ?></span>
             </li>
+            <p>Total Level: <?php echo $total; ?></p>
         </div>
         <div id="skill_buttons">
             <form action="game.php" method="post">
