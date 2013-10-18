@@ -2,9 +2,24 @@
     <head>
         <link rel="stylesheet" href="game.css">
         <?php
+        include_once('skills.php');
+
+        $game_update = "";
         if (isset($_POST['submit'])) {
             if ($_POST['submit'] == 'Mine') {
                 // user mined
+                if(attempt_skill($mine)) {
+                    //user gets 1 exp
+                    //user gets stone
+                    //chance of losing food
+                    //chance of getting gem
+                    //small chance of getting bonus exp or stone
+                    $game_update = "Your attempt at mining was successful. You gain some stone and experience.";
+                }
+                else {
+                    //user loses food
+                    $game_update = "Your attempt at mining was unsuccessful. You use up some food in the process.";
+                }
             } else if($_POST['submit'] == 'Fish') {
                 // user fished
             } else if($_POST['submit'] == 'Farm') {
