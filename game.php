@@ -39,7 +39,7 @@
         <div id="game_update">
             <?php echo $game_update; ?>
         </div>
-        <p><a href="inventory.php" target="_blank">Inventory</a> | <a href="shop.php" target="_blank">Shop</a> | <a href="experience.php" target="_blank">Experience</a></p>
+        <p><a href="#" onclick="window.open('inventory.php','mywindow','width=25%,height=25%,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes')">Inventory</a> | <a href="#" onClick="onclick="window.open('shop.php','mywindow','width=25%,height=25%,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes'">Shop</a> | <a href="#" onClick="onclick="window.open('experience.php','mywindow','width=25%,height=25%,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes'">Experience</a></p>
         <div id="skill_buttons">
             <form action="game.php" method="post">
                 <input type="submit" value="Mine">
