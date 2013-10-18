@@ -26,7 +26,7 @@
     }
 
     function exp_for_next_level($current_level) {
-        $exp = ($current_level*500);
+        $exp = ($current_level*400);
         return $exp;
     }
 ?>
