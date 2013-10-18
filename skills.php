@@ -27,8 +27,16 @@
         }
     }
 
-    function exp_for_next_level($current_level) {
-        $exp = ($current_level*(5/2)*10);
-        return $exp;
+    function exp_for_next_level($current_level, $total_exp) {
+
+        $exp = find_total_exp($current_level);
+        return ($exp - $total_exp);
+    }
+
+    function find_total_exp($level) {
+        if($level < 1) {
+            return;
+        }
+        return (($level*(5/2)*10) + (1.05^$level) + find_total_exp($level-1));
     }
 ?>

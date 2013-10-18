@@ -32,5 +32,6 @@
             //someone bought or sold shit. Figure out what and how much then tell the nigga
             echo "Yall niggas bought or sold some shit";
         }
+        ?>
     </body>
 </html>
